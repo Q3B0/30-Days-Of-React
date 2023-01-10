@@ -100,8 +100,9 @@ However, in React it could be as follows:
 import React, { Component } from 'react'
 // if it is functional components
 class App extends Component {
-  handleClick = () => {
+  handleClick = (event) => {
     alert('Welcome to 30 Days Of React Challenge')
+    event.preventDefault()
   }
   render() {
     return (
